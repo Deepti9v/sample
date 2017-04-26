@@ -2,12 +2,97 @@
 <html lang="en">
 
 <head>
-   
+    <title> Modernize </title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+
+    $(".fade").hover(function(){
+        $(this).stop().animate({ "opacity" :  "1" });
+        },function(){
+        $(this).stop().animate({ "opacity" :  "0.5" });
+      });
+
+      });
+    </script>
 </head>
 
 <body>
     <div id="wrapper">
-       TESTIG
+        <div id="header">
+            <span> <img src="./images/logo.png" alt="No Image"/> </span>
+            <h5> Call us : (66)8 234 678 </h5>
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="#"> Home </a> </li>
+                <li> <a href="#"> Blog </a> <span class="arrow"> >>  </span> </li>
+                <li> <a href="#"> Portfolio </a> <span class="arrow"> >>  </span> </li>
+                <li> <a href="#"> Shortcodes </a> <span class="arrow"> >>  </span> </li>
+                <li> <a href="#"> Features </a> <span class="arrow"> >>  </span> </li>
+                <li> <a href="#"> Contact </a> </li>
+            </ul>
+            <img src="./images/main_pic.png" alt="No Image" />
+        </nav>
+        <div id="main_content1">
+            <div class="subcontents">
+                <img src="./images/content_icon1.png" alt="No Image"/>
+                <span class="header1"> Ridiculous Ornare </span>
+                <p> accusamus. Vix stet dicant malorum te. Quo in mentitum molestiae. </p>
+            </div>
+            <div class="subcontents">
+                <img src="./images/content_icon2.png" alt="No Image" />
+                <span class="header1"> Ipsum purus </span>
+                <p> accusamus. Vix stet dicant malorum te. Quo in mentitum molestiae. </p>
+            </div>
+            <div class="subcontents">
+                <img src="./images/content_icon3.png" alt="No Image" />
+                <span class="header1"> Tellus Qualma </span>
+                <p> accusamus. Vix stet dicant malorum te. Quo in mentitum molestiae. </p>
+            </div>
+            <div class="subcontents">
+                <img src="./images/content_icon4.png" alt="No Image" />
+                <span class="header1"> Sem esgasj </span>
+                <p> accusamus. Vix stet dicant malorum te. Quo in mentitum molestiae. </p>
+            </div>
+        </div>
+        <div id="main_content2">
+            <div id="content_text">
+                <p id="main_topic"> accusamus. Vix stet dicant malorum te. Quo in mentitum molestiae. </p>
+                <p id="data"> accusamus. Vix stet dicant malorum te. Quo in mentitum molestiae.accusamus. Vix stet dicant malorum te. Quo in mentitum molestiae. </p>
+            </div>
+            <div id="content_button">
+                <input type="button" value="Buy Now" class="" />
+            </div>
+        </div>
+        <footer>
+            <div id="headings">
+                <h3> Portfolio </h3>
+            </div>
+            <div class="footer_subcontents">
+                <img src="./images/portfolio1.png" alt="No Image" class="fade" />
+                <p> Build in shortcode </p>
+                <p> You can easily use shortcode via icons in text editor. Easy ! Vix stet dicant malorum te. Quo in mentitum molestiae </p>
+            </div>
+            <div class="footer_subcontents">
+                <img src="./images/portfolio2.png" alt="No Image" class="fade"/>
+                <p> New Page Builder </p>
+                <p> You can easily use shortcode via icons in text editor. Easy ! Vix stet dicant malorum te. Quo in mentitum molestiae </p>
+            </div>
+            <div class="footer_subcontents">
+                <img src="./images/portfolio3.png" alt="No Image" class="fade"/>
+                <p> Access Elements Colour </p>
+                <p> You can easily use shortcode via icons in text editor. Easy ! Vix stet dicant malorum te. Quo in mentitum molestiae </p>
+            </div>
+            <div class="footer_subcontents">
+                <img src="./images/portfolio4.png" alt="No Image" class="fade"/>
+                <p> Custom Post types </p>
+                <p> You can easily use shortcode via icons in text editor. Easy ! Vix stet dicant malorum te. Quo in mentitum molestiae </p>
+            </div>
+            <a id="back_to_top" href="#"> Back To Top </a>
+        </footer>
     </div>
     <!-- end of wrapper -->
 </body>
